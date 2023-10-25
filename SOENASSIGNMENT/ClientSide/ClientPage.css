@@ -3,71 +3,67 @@
   box-sizing: border-box;
   }
   
-  
+  Menu{
+
+  }
   ul{
-  list-style-type: none; /*no markers*/
-  text-align:center;/*align in the center of the box*/
-  overflow: hidden; /*ensures text is only seen within box*/
-  background-color: #25274D;
-  margin: 0; /*inner edge is flush with ege of screen*/
-  padding:0; /*inner edge is flush with ege of screen*/
+    list-style-type: none; /*no markers*/
+    text-align:center;/*align in the center of the box*/
+    background-color: #25274D;
+
+    overflow: hidden; /*ensures text is only seen within box*/
+    margin: 0; /*inner edge is flush with ege of screen*/
+    padding:0; /*inner edge is flush with ege of screen*/
   }
-  
-  
+
   li{
-  float:right;
+    float:right;
   }
+  
   .logo{
-  float:left;
-  max-width:70px;
-  padding: 10px;
+    float:left;
+    max-width:70px;
+    padding: 10px;
   }
   .logo img{
-  width:100%;
-  height:auto;
+    width:100%;
+    height:auto;
   }
   .menuButton {
-  font-size: 13px;
-  font-weight: bold;
-  font-family:'Roboto','Lato', 'Open Sans';
-  color: #2E9CCA;
-  
-  
-  display: block-inline;/*menu = rectangle*/
-  background-color: #25274D;
-  border: none;
-  padding: 16px;/*disance between edge of list items*/
-  text-decoration: none;
-  cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    font-family:'Roboto','Lato', 'Open Sans';
+    color: #2E9CCA;
+
+    display: block-inline;/*menu = rectangle*/
+    background-color: #25274D;
+    border: none;
+    padding: 16px;/*disance between edge of list items*/
+    text-decoration: none;
+    cursor: pointer;
   }
-  
-  
+   
   .menuButton:hover {
-  background-color:#090a1c;/*hover colour*/
+    background-color:#090a1c;/*hover colour*/
   }
   
   
   /*Body of html file for client main page*/
   
-  
   .ClientContainer {
-  display:flex;
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-  grid-gap: 20px; /* Adjust as needed for spacing */
+    display:flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    grid-gap: 20px; /* Adjust as needed for spacing */
   }
   
   
   .Column1{
-  flex:1;
-  
-  
+    flex:1;
   }
   
   
   .Column2{
-  flex:1;
-  
-  
+    flex:1;
   }
   
