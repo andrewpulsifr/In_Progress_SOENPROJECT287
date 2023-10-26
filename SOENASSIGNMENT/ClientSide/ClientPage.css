@@ -9,6 +9,7 @@
     right: 0; /* You can adjust this value to change the horizontal position */
     width: 100%; /* Optional: To make the section span the full width of the viewport */
     background-color: #25274D;
+    box-shadow: 0px 3px 20px;
   }
   .Menu h4{
     margin:0;
@@ -21,21 +22,20 @@
     overflow: hidden;
     margin: 0; /*inner edge is flush with ege of screen*/
     padding:0; /*inner edge is flush with ege of screen*/
-    padding-right: 10px; /*inner edge is flush with ege of screen*/
   }
 
   .Menu li{
     
     float:right;
-    text-align: center;
   }
 
-  .logo{
+  .MainLogo{
+    padding:0.5%;
     float:left;
-    max-width: 74px;
-    margin-left: 30px;
+    max-width: 4.8%;
+    margin-left: 1%;
   }
-  .logo img{
+  .MainLogo img{
     width:100%;
     height:100%;
 
@@ -49,7 +49,8 @@
     display: inline-block;/*menu = rectangle*/
     background-color: #25274D;
     border: none;
-    padding: 16px;/*disance between edge of list items*/
+    padding: 5%;/*disance between edge of list items*/
+
     text-decoration: none;
     cursor: pointer;
   }
@@ -62,28 +63,43 @@
   /*Body of html file for client main page*/
   
   html, body {
-    height: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
-    background-color:#2E9CCA; 
+    background-color:#AAABB8;
   }
 
   .ClientContainer {
-    margin-top: 116px;
-    padding:0;
+    height: 1000px;
+    margin-top: 75px;
     display:flex;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-    grid-gap: 20px; /* Adjust as needed for spacing */
+    grid-template-columns: 1fr 2fr; /* Two equal-width columns */
   }
   
   
   .Column1{
-    flex:1;
+    width: 400px;
+  }
+  .WorldLogo{
+    background-image: url("NUmberLink.png");
+    background-repeat: repeat-y;
+    height:100%;
   }
   
-  
   .Column2{
-    flex:1;
+    width: 95%;
+    margin-top: 75px;
+    margin-right: 2px;
+    margin-bottom: 30px;
+    border: 1rem solid #00ff00;
+    background-color: #2E9CCA;
+    padding-left:30px;
+
+    border-width: 2rem; 
+    border-color: #29648A;
+    box-shadow: 5px 5px 40px 5px;
+    border-style: ridge;
+   
   }
   
