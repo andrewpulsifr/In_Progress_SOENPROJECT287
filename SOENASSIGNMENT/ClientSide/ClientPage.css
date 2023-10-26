@@ -3,31 +3,42 @@
   box-sizing: border-box;
   }
   
-  Menu{
-
+  header{
+    position: fixed;
+    top: 0; /* You can adjust this value to change the vertical position */
+    right: 0; /* You can adjust this value to change the horizontal position */
+    width: 100%; /* Optional: To make the section span the full width of the viewport */
+    background-color: #25274D;
   }
-  ul{
+  .Menu h4{
+    margin:0;
+  }
+
+  .Menu ul{
     list-style-type: none; /*no markers*/
     text-align:center;/*align in the center of the box*/
-    background-color: #25274D;
 
-    overflow: hidden; /*ensures text is only seen within box*/
+    overflow: hidden;
     margin: 0; /*inner edge is flush with ege of screen*/
     padding:0; /*inner edge is flush with ege of screen*/
+    padding-right: 10px; /*inner edge is flush with ege of screen*/
   }
 
-  li{
+  .Menu li{
+    
     float:right;
+    text-align: center;
   }
-  
+
   .logo{
     float:left;
-    max-width:70px;
-    padding: 10px;
+    max-width: 74px;
+    margin-left: 30px;
   }
   .logo img{
     width:100%;
-    height:auto;
+    height:100%;
+
   }
   .menuButton {
     font-size: 13px;
@@ -35,7 +46,7 @@
     font-family:'Roboto','Lato', 'Open Sans';
     color: #2E9CCA;
 
-    display: block-inline;/*menu = rectangle*/
+    display: inline-block;/*menu = rectangle*/
     background-color: #25274D;
     border: none;
     padding: 16px;/*disance between edge of list items*/
@@ -50,7 +61,16 @@
   
   /*Body of html file for client main page*/
   
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:#2E9CCA; 
+  }
+
   .ClientContainer {
+    margin-top: 116px;
+    padding:0;
     display:flex;
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal-width columns */
