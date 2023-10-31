@@ -1,73 +1,190 @@
-/*Menu attributes*/
+/* Global CSS */
 *{
   box-sizing: border-box;
+
+  }
+  
+  /* Header Styles */
+  header{
+    position: fixed;
+    top: 0; /* You can adjust this value to change the vertical position */
+    right: 0; /* You can adjust this value to change the horizontal position */
+    width: 100%; /* Optional: To make the section span the full width of the viewport */
+    background-color: #25274D;
+    box-shadow: 0px 0px 20px;
+    z-index: 1;
+  }
+  /* Menu Styles */
+    
+  .Menu h4{
+  margin:0;
   }
   
   
-  ul{
-  list-style-type: none; /*no markers*/
-  text-align:center;/*align in the center of the box*/
-  overflow: hidden; /*ensures text is only seen within box*/
-  background-color: #25274D;
-  margin: 0; /*inner edge is flush with ege of screen*/
-  padding:0; /*inner edge is flush with ege of screen*/
+  .Menu ul{
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end; /* Align items to the right */
   }
   
   
-  li{
+  .Menu li{
+  list-style-type: none;
   float:right;
+  width: 15%; 
+  height: 100%;
+  text-align: center; /* Center-align text within each menu item */
   }
-  .logo{
-  float:left;
-  max-width:70px;
-  padding: 10px;
+  
+  
+  .MainLogo {
+  list-style-type: none;
+ 
+  float: left;
+  max-width: 5%;
+  margin-left: 0; /* Adjust this value to control the spacing from the left side */
   }
-  .logo img{
+  .MainLogo img{
   width:100%;
-  height:auto;
+  height:100%;
+  padding-left:20%;
+  padding-top:20%;
+  
   }
-  .menuButton {
-  font-size: 13px;
+  .Menu a{
+  text-align: center;
+  height:100%;
+  font-size: 90%;
   font-weight: bold;
   font-family:'Roboto','Lato', 'Open Sans';
   color: #2E9CCA;
   
   
-  display: block-inline;/*menu = rectangle*/
+  display: inline-block;/*menu = rectangle*/
   background-color: #25274D;
   border: none;
-  padding: 16px;/*disance between edge of list items*/
+  padding: 15%;/*disance between edge of list items*/  
+
   text-decoration: none;
   cursor: pointer;
   }
   
   
-  .menuButton:hover {
+  a:hover {
   background-color:#090a1c;/*hover colour*/
+  box-shadow: 5px 5px 40px 5px;
   }
-  
-  
   /*Body of html file for client main page*/
+  html, body {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color:#464866;
+  }
   
-  
+  /*Client page content*/
   .ClientContainer {
-  display:flex;
+  overflow: hidden;
+  height: 1000px;
+  margin-top: 75px;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-  grid-gap: 20px; /* Adjust as needed for spacing */
+  grid-template-columns: 1fr 2fr; /* Two equal-width columns */
   }
-  
-  
   .Column1{
-  flex:1;
+  width: 400px;
   
   
   }
-  
-  
+  .WorldLogo{
+  background-image: url("NumberLink.png");
+  background-repeat: repeat-y;
+  height:100%;
+  }
   .Column2{
-  flex:1;
-  
-  
+    width: 95%;
+    margin-top: 75px;
+    margin-right: 2px;
+    margin-bottom: 30px;
+    background-color: #125b8b;
+    padding:30px;
+    border-width: 2rem;
+    border-color: #014a7b ;
+    box-shadow: 5px 5px 40px 5px;
+    border-style: ridge;
   }
+
+  .Column2{
+    color: #25274D;
+  }
+  
+  .descTitle h2{
+    
+    text-transform: uppercase;
+    color:white;
+  }
+
+  .descTitle{
+    text-align: center;
+    color:#2E9CCA;
+  }
+  
+
+  /* Style the button to look like a dropdown trigger */
+.dropbtn {
+  margin-top:50px;
+  width:100%;
+  font-weight: bold;
+  padding:10px;
+  background-color: #25274D;
+  color: #2E9CCA;
+  border: double 6px #0c0f3c;
+  cursor: pointer;
+}
+
+/* Position the dropdown content, and hide it by default */
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  font-family: "Courier New", monospace;
+  text-align: center;
+  color: white;
+  display: none;
+  position: absolute;
+  background-color: #25274D;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px #25274D;
+  z-index: 2;
+  border: double 6px #0b0e49;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+}
+
+/* Change the link color on hover */
+.dropdown-content a:hover {
+  background-color: #2E9CCA;
+}
+
+/* Show the dropdown content when the button is hovered over */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown p{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+  
+  
+  
   
