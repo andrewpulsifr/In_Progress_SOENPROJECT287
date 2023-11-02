@@ -11,7 +11,7 @@
     width: 100%; /* Optional: To make the section span the full width of the viewport */
     background-color: #25274D;
     box-shadow: 0px 0px 20px;
-    z-index: 1;
+    z-index: 4;
   }
   /* Menu Styles */
     
@@ -83,6 +83,7 @@
   margin: 0;
   padding: 0;
   background-color:#464866;
+  z-index: 1;
   }
   
   /*Client page content*/
@@ -187,5 +188,88 @@
 }
   
   
+  /*Serial number Search*/
+  .SearchContainer {
+  overflow: hidden;
+  height: 1000px;
+  margin-top: 1px;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr; 
+  }
+
+  .sideColumns{
+    width: 100%;
+    background-image: url("NumberLink.png");
+    background-repeat: repeat-y;
+    height:100%;
+    z-index: 2;
+    overflow: hidden;
+
+  }
+
+  
+  .searchPage{
+    
+    display:inline-block;
+    width: 100%;
+    margin-top: 40px;
+    background-color: #125b8b;
+    padding:30px;
+    border-width: 2rem;
+    border-color: #014a7b ;
+    box-shadow: 5px 5px 40px 5px;
+    border-style: ridge;
+    z-index: 3;
+  }
+
+  textarea{
+    width: 95%;
+    margin:15px;
+    text-align: center;
+  }
+
+  input:hover {
+    background-color:#090a1c;/*hover colour*/
+    box-shadow: 5px 5px 40px 5px;
+    color:#2E9CCA;
+  }
+  input[type="submit"]{
+    color:#2E9CCA;
+    background-color: #25274D;
+    padding: 8px 100px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    margin:30px;
+    margin-left: 33%;
+    font-weight: bold;
+  }
+
+  .searchOutput table, th,td {
+    border: 5px solid ;
+  }
+
+table{
+  margin:20px;
+  margin-top: 20px;
+  width: 95%;
+  border-spacing:5px;
+  border-collapse: collapse;
+  
+}
+  .searchOutput thead,th,table{
+    background-color: #25274D;
+    color:#2E9CCA;
+  }
+  .searchOutput tr{
+    background-color: #AAABB8;
+    color:#25274D;
+    height:100px;
+  }
+
+
+  
+
+
   
   
