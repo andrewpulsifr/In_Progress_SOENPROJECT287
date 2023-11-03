@@ -6,12 +6,12 @@
   /* Header Styles */
   header{
     position: fixed;
-    top: 0; /* You can adjust this value to change the vertical position */
-    right: 0; /* You can adjust this value to change the horizontal position */
-    width: 100%; /* Optional: To make the section span the full width of the viewport */
+    top: 0; 
+    right: 0; 
+    width: 100%; 
     background-color: #25274D;
     box-shadow: 0px 0px 20px;
-    z-index: 4;
+    z-index: 2;
   }
   /* Menu Styles */
     
@@ -267,8 +267,62 @@ table{
     height:100px;
   }
 
+  /*communication form*/
+  .EmailForm {
+    margin: 150px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #AAABB8;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-  
+.EmailForm h2 {
+    text-align: center;
+    color: #25274D;
+}
+
+.EmailForm label {
+    display: block;
+    margin: 10px 0;
+    color: #25274D;
+    font-weight: bold;
+}
+
+.EmailForm input[type="email"],
+.EmailForm select,
+.EmailForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.EmailForm textarea {
+    height: 150px;
+}
+
+.EmailForm input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #25274D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px auto;
+    
+}
+
+.EmailForm input[type="submit"]:hover {
+    background-color: #090a1c;
+}
+
 
 
   

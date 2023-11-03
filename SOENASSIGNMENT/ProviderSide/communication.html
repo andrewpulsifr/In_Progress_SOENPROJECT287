@@ -4,7 +4,7 @@
 
     <head>
         <link rel="stylesheet" href="ProviderPage.css">
-        <title>Client Menu</title>
+        <title>Communication form</title>
         </head>
         <header>
             <div class="Menu">
@@ -29,7 +29,27 @@
         
 
     <body>
-
+        <form action="send_email.php" method="post" class="EmailForm"> 
+            <h1 style="color: #25274D">Notify Clients</h1>
+            <label for="providerEmail">Your Email:</label>
+            <input type="email" id="providerEmail" name="providerEmail" required><br><br>
+    
+            <label for="clientEmail">Client Email:</label>
+            <input type="email" id="clientEmail" name="clientEmail" required><br><br>
+    
+            <label for="messageType">Notification Type:</label>
+            <select id="messageType" name="messageType" required>
+                <option value="subscriptionRenewal">Select</option>
+                <option value="subscriptionRenewal">Approaching Subscription Renewal</option>
+                <option value="invalidSerial">Invalid Serial Number</option>
+                <option value="irregularUse">Irregular Use of Serial Numbers</option>
+            </select><br><br>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    
+            <input type="submit" value="Send Email">
+        </form>
         <a href="l.html"><button>Go To Login</button></a>
         <a href="login.html"><button>Go To Login</button></a>
 
