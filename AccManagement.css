@@ -1,0 +1,140 @@
+/* Global CSS */
+*{
+    box-sizing: border-box;
+  
+    }
+    
+    /* Header Styles */
+    header{
+      position: fixed;
+      top: 0; /* You can adjust this value to change the vertical position */
+      right: 0; /* You can adjust this value to change the horizontal position */
+      width: 100%; /* Optional: To make the section span the full width of the viewport */
+      background-color: #25274D;
+      box-shadow: 0px 0px 20px;
+      z-index: 1;
+    }
+    /* Menu Styles */
+      
+    .Menu h4{
+    margin:0;
+    }
+    
+    
+    .Menu ul{
+    display: flex;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end; /* Align items to the right */
+    }
+    
+    
+    .Menu li{
+    list-style-type: none;
+    float:right;
+    width: 15%; 
+    height: 100%;
+    text-align: center; /* Center-align text within each menu item */
+    }
+    
+    
+    .MainLogo {
+    list-style-type: none;
+   
+    float: left;
+    max-width: 5%;
+    margin-left: 0; /* Adjust this value to control the spacing from the left side */
+    }
+    .MainLogo img{
+    width:100%;
+    height:100%;
+    padding-left:20%;
+    padding-top:20%;
+    
+    }
+    .Menu a{
+    text-align: center;
+    height:100%;
+    font-size: 90%;
+    font-weight: bold;
+    font-family:'Roboto','Lato', 'Open Sans';
+    color: #2E9CCA;
+    
+    
+    display: inline-block;/*menu = rectangle*/
+    background-color: #25274D;
+    border: none;
+    padding: 15%;/*disance between edge of list items*/  
+  
+    text-decoration: none;
+    cursor: pointer;
+    }
+    
+    
+    a:hover {
+    background-color:#090a1c;/*hover colour*/
+    box-shadow: 5px 5px 40px 5px;
+    }
+
+    /*Body of html file for client main page*/
+    html, body {
+        height: auto;
+        margin: 0;
+        padding: 0;
+        background-color:#464866;
+        }
+    .WorldLogo{
+      background-image: url("NumberLink.png");
+      background-repeat: repeat-y;
+      height:100%;
+    }
+    .AccCreateContainer{
+    overflow: hidden;
+    height: 600px;
+    margin-top: 80px; /*To change the placement of the h1*/
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Two equal-width columns */
+    }
+    form{
+      background-color: #2E9CCA;
+      width: 400px;
+      text-align: center;
+      display: inline-block;
+      padding: 10%;
+      box-shadow: 1px 30px 20px #2E9CCA;
+    }
+    .AccountInfo{
+      width: 76%;
+      margin-top: 80px;
+      margin-right: 35px;
+      margin-bottom: 10px;
+      background-color: #125b8b;
+      padding:10px;
+      border-width: 2rem;
+      border-color: #014a7b ;
+      box-shadow: 5px 5px 40px 5px;
+      border-style: groove;
+    }
+    .box{
+      width: 60%;
+      margin-top: 75px;
+      margin-right: 35px;
+      margin-bottom: 30px;
+      background-color: #125b8b;
+      padding:30px;
+      border-width: 2rem;
+      border-color: #014a7b ;
+      box-shadow: 5px 5px 40px 5px;
+      border-style: groove;
+    }
+    input[type=submit] {
+      background-color: #04AA6D;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
