@@ -5,68 +5,125 @@
 <link rel="stylesheet" href="ProviderPage.css">
 <title>Provider Menu</title>
 </head>
-
 <header>
-<div class="Menu">
-<h4>
-<ul>
-<nav>
-<li><button class="menuButton"> <menu href="ManagementP.html">Account Management</menu> </button></li>
-<li><button class="menuButton"><menu href="l.html">Notifications</menu></button></li>
-<li><button class="menuButton"><menu href="serialP.html">Serial Numbers</menu></button></li>
-</nav>
-<div class="logo">
-<li> <img src="LOGO.png" alt="brandLogo"></li>
-</div>
-</ul>
-</h4>
-</nav>
-</div>
-
-
+    <div class="Menu">
+        <h4>
+            <ul></ul>
+                <nav>
+                    <li><a href="communication.html">Communication</a></li>
+                    <li><a href="serialGenerate.html">Generate serial number</a></li>
+                    <li><a href="serialSecurity.html">Serial number Activation</a></li>
+                    <li><a href="serialSearch.html">Serial number Search</a></li>
+                    <li> <a href="ManagementP.html">Management Page</a> </li>
+                </nav>
+                </div>
+                <div class="MainLogo">
+                    <li> <img src="LOGO.png" alt="brandLogo"></li>
+                </div>
+                </nav>
+            </ul>
+        </h4>
 </header>
 
 
 <body>
-<div class="ProviderContainer">
-<div class="Column1">
-</div>
+    <div class="ProviderContainer">
+
+        <div class="Column1">
+            <div class="WorldLogo">
+               
+            </div>
+        </div>
 
 
-<div class="Column2">
-<h1>Welcome to your provider access portal</h1>
-<h4>Please read the services we provide</h4>
+        <div class="Column2">
+            <div class="descTitle">
+                <h2>Welcome to your provider access portal</h2>
+                <h4>Please read the services we provide by hovering near buttons!</h4>
+            </div>
 
 
-</div>
-</div>
-</p>
+            <div class="descSection">
 
+                <div class="dropdown">
+                    <button class="dropbtn">MANAGE ACCOUNTS</button>
+                    <div class="dropdown-content">
+                    <p>When managing accounts you can.</p>
+                            <ul>
+                                <li>Create</li>
+                                <li>Edit</li>
+                                <li>Delete</li>
+                            </ul>
+                        <p>Information from any account with required information such as.</p>
+                            <ul>
+                                <li>Name</li>
+                                <li>Address</li>
+                                <li>Postal Code</li>
+                            </ul>
+                    </div>   
+                </div>
 
-  <script>
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
-    
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
-      if (!event.target.matches('.menuButton')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
-    </script>
+        
+                    <div class="dropdown">
+                        <button class="dropbtn">SERIAL NUMBER SEARCH</button>
+                        <div class="dropdown-content">
+                        <p>Associate a license/serial number with a account with required information</p>
+                            <p>Required information includes</p>
+                                <ul>
+                                    <li>Serial Number</li>
+                                    <li>Purchase date</li>
+                                    <li>Expiry Date</li>
+                                    <li>Software Name</li>
+                                    <li>Name of Third Party</li>
+                                </ul>
+                        </div>   
+                    </div>
 
+                    <div class="dropdown">
+                        <button class="dropbtn">SERIAL NUMBER ACTIVATION</button>
+                        <div class="dropdown-content">
+                        <p>Enable activation and deactivation of serial numbers to control software usage.</p>
+                            <p>Required information includes</p>
+                                <ul>
+                                  <li>Account information</li>
+                                  <li>Serial Number</li>
+                                  <li>Purchase date</li>
+                                  <li>Expiry Date</li>
+                                  <li>Software Name</li>
+                                </ul>
+                        </div>   
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">GENERATE SERIAL NUMBERS</button>
+                        <div class="dropdown-content">
+                        <p>Generates a new unique serial number.</p>
+                            <p>Required information includes</p>
+                                <ul>
+                                    <li>Account information</li>
+                                </ul>
+                        </div>   
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">COMMUNICATION</button>
+                        <div class="dropdown-content">
+                        <p>Notify clients through emails whenever needed.</p>
+                            <p>Required information includes</p>
+                                <ul>
+                                    <li>Account information</li>
+                                </ul>
+                        </div>   
+                    </div>
+                
+           
+
+            
+
+                
+               
+
+        </div>
+    </div>
 </body>
 </html>
-
-
-

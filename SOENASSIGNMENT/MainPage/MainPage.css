@@ -14,63 +14,68 @@
     }
 
 
+   /* Menu Styles */
     
-    li{
-      list-style-type: none;
-      float:right;
-      width: 15%; 
-      height: 100%;
-      text-align: center; /* Center-align text within each menu item */
-      }
-
-
+   .Menu h4{
+    margin:0;
+    }
+    
+    
     .Menu ul{
-      list-style-type: none; /*no markers*/
-      text-align:center;/*align in the center of the box*/
-      overflow: hidden; /*ensures text is only seen within box*/
-      background-color: #25274D;
-      margin: 0; /*inner edge is flush with ege of screen*/
-      padding:0; /*inner edge is flush with ege of screen*/
+    display: flex;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end; /* Align items to the right */
     }
     
     
-    li{
+    .Menu li{
+    list-style-type: none;
     float:right;
-    }
-  
-    .MainLogo{
-      float: left;
-     /* Adjust this value to control the spacing from the left side */
+    width: 15%; 
+    height: 100%;
+    text-align: center; /* Center-align text within each menu item */
     }
     
-      
-
-      .MainLogo img {
-       width:80px;
-       padding:10px;
-       
-      }
-      
-    .menuButton  {
-    font-size: 20px;
+    
+    .MainLogo {
+    list-style-type: none;
+   
+    float: left;
+    max-width: 5%;
+    margin-left: 0; /* Adjust this value to control the spacing from the left side */
+    }
+    .MainLogo img{
+    width:100%;
+    height:100%;
+    padding-left:20%;
+    padding-top:20%;
+    
+    }
+    
+    .Menu a{
+    text-align: center;
+    height:100%;
+    font-size: 90%;
     font-weight: bold;
     font-family:'Roboto','Lato', 'Open Sans';
-    color: #AAABB8;
+    color: #2E9CCA;
     
     
-    display: block-inline;/*menu = rectangle*/
+    display: inline-block;/*menu = rectangle*/
     background-color: #25274D;
     border: none;
-    padding: 16px;/*disance between edge of list items*/
+    padding: 15%;/*disance between edge of list items*/  
+  
     text-decoration: none;
     cursor: pointer;
     }
     
     
-    .menuButton:hover {
+    a:hover {
     background-color:#090a1c;/*hover colour*/
     box-shadow: 5px 5px 40px 5px;
-    
     }
 
     /*option button*/

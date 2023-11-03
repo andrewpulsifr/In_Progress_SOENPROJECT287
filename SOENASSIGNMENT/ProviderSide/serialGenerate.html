@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0px 0px 10px #000;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="container">
+        <h1>Provider Page</h1>
+        
+        <div>
+            <h2>Store Client Name</h2>
+            <input type="text" id="clientName" placeholder="Enter client name">
+            <button onclick="storeClientName()">Store Name</button>
+        </div>
+
+        <div>
+            <h2>Store Client Product</h2>
+            <input type="text" id="clientProduct" placeholder="Enter client product">
+            <button onclick="storeClientProduct()">Store Product</button>
+        </div>
+
+        <div>
+            <h2>Generate Serial Number</h2>
+            <button onclick="generateSerialNumber()">Generate Serial Number</button>
+        </div>
+
+        <div id="serialNumbers">
+            <h2>Serial Numbers</h2>
+            <ul id="serialList"></ul>
+        </div>
+    </div>
+
+    <script>
+        let clients = [];
+
+        function storeClientName() {
+            const clientName = document.getElementById('clientName').value;
+            clients.push({ name: clientName, product: '', serialNumber: '' });
+            displayClients();
+        }
+
+        function storeClientProduct() {
+            const clientProduct = document.getElementById('clientProduct').value;
+            if (clients.length > 0) {
+                clients[clients.length - 1].product = clientProduct;
+            }
+            displayClients();
+        }
+
+        function generateSerialNumber() {
+            if (clients.length > 0) {
+                const serialNumber = Math.floor(10000000 + Math.random() * 90000000);
+                clients[clients.length - 1].serialNumber = serialNumber;
+                displayClients();
+            }
+        }
+
+        function displayClients() {
+            const serialList = document.getElementById('serialList');
+            serialList.innerHTML = '';
+            for (const client of clients) {
+                serialList.innerHTML += `<li>Client: ${client.name}, Product: ${client.product}, Serial Number: ${client.serialNumber || 'N/A'}</li>`;
+            }
+        }
+    </script>
+</body>
+</html>
+
+
