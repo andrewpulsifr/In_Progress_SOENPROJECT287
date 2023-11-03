@@ -36,7 +36,6 @@
   
   .MainLogo {
   list-style-type: none;
- 
   float: left;
   max-width: 5%;
   margin-left: 0; /* Adjust this value to control the spacing from the left side */
@@ -56,8 +55,6 @@
   font-weight: bold;
   font-family:'Roboto','Lato', 'Open Sans';
   color: #2E9CCA;
-  
-  
   display: inline-block;/*menu = rectangle*/
   background-color: #25274D;
   border: none;
@@ -262,21 +259,29 @@
     height:100px;
   }
 /*New Liscence Page*/
-.newLiscenceContainer{
+.formOrientation{
   overflow: hidden;
-  height: 1100px;
+  height: 900px;
   margin-top: 1px;
   display: grid;
   grid-template-columns: 3fr 5fr; 
 }
 
-.name{
+/*formats text boxes side by side*/
+.fTextBox{
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr;
+}
+.FamilyName, .verificationCode, .thirdParty{
+  margin-left:5%;
+}
+.GivenName, .companyName, .softwareName{
+  margin-right:5%;
 }
 
 .formContainer{
   display: inline-block;
+  height:120%;
   margin-right: 50px;
   width: 100%;
   margin-top: 50px;
@@ -286,7 +291,6 @@
   border-color: #014a7b ;
   box-shadow: 5px 5px 40px 5px;
   border-style: ridge;
-  border-right:none;
 }
 
 .formContainer h2{
@@ -301,15 +305,32 @@
 
 .formContainer h5{
   color:#25274D;
+  text-decoration: underline;
+  font-weight:bolder;
 }
 
 .formContainer textarea{
   margin:5px;
+  width: 100%;
+
 }
 
 
-  
+  /*Liscence Renewal*/
 
-
+  .formOrientationLeft{
+    overflow: hidden;
+    height: 900px;
+    margin-top: 1px;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+  }
   
-  
+  .renewalSubmit{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left:10%;
+  }
+  .renew input[type="submit"],.cancel input[type="submit"]{
+    margin-left:0;
+  }
