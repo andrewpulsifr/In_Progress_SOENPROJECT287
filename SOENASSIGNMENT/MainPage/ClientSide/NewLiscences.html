@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="ClientPage.css">
+        <title>Serial Renewal</title>
+    </head>
+
+    <header>
+        <div class="Menu">
+            <h4>
+                <ul>
+                    <nav>
+                        <li><a href="SerialRenewal.html">Serial Cancel/Renewal</a></li>
+                        <li><a href="NewLiscences.html">New Serial Number</a></li>
+                        <li><a href="Management.html">List of Serial numbers</a></li>
+                        <li><a href="SerialNumSrch.html">Serial number Search</a></li>
+                        <li> <a href="Management.html">Management Page</a> </li>
+                        <li> <a href="ClientPage.html">Client Home</a> </li>
+                    </nav>
+                    </div>
+                    <div class="MainLogo">
+                        <li> <img src="LOGO.png" alt="brandLogo"></li>
+                    </div>
+                    </nav>
+                </ul>
+            </h4>
+    </header>
+    
+
+    <body>
+        <div class="formOrientation">
+
+            <div class="sideColumns"></div>
+
+                <div class="formContainer"style="border-right:none;">
+                    <h2> APPLY FOR NEW SERIAL NUMBER</h2>
+                    <h4>Please input account info and submit for approval</h4>
+
+                    <div class="inputContainer">
+                        <form action="NewLiscences.html" method="post">
+                            <div class="fTextBox">
+                                <div class="GivenName"> <h5>Given Name:</h5>
+                                    <textarea name="firstName" rows="1" cols="30"placeholder="Given Name"></textarea></div>
+                                <div class="FamilyName"><h5>Family Name:</h5>
+                                        <textarea name="lastName" rows="1" cols="30"placeholder="Family Name"></textarea></div>
+                                </div>
+                            <div class="AddressInfo">
+                                <h5>Address:</h5>
+                                <textarea name="Address" rows="1" cols="40"placeholder="Address"></textarea>
+                            </div>
+                            <div class="fTextBox">
+                                <div class="companyName"><h5>Company Name:</h5>
+                                    <textarea name="companyName" rows="1" cols="30"placeholder="Company Name"></textarea></div>
+                                <div class="verificationCode"><h5>Verfication Code:</h5>
+                                    <textarea name="verficationCode" rows="1" cols="30"placeholder="VerficationCode"></textarea></div>
+                            </div>
+
+                            <div class="fTextBox">
+                                <div class="softwareName"><h5>Software Name:</h5>
+                                    <textarea name="softwareName" rows="1" cols="30"placeholder="Software Name"></textarea></div>
+                                <div class="thirdParty"><h5>Third Party Provider:</h5>
+                                    <textarea name="thirdParty" rows="1" cols="30"placeholder="Third Part Provider"></textarea></div>
+                            </div>
+                            <div class="signature" style="text-align: center;">
+                                <h5 >Typed Signature:</h5>
+                                    <textarea name="signature" rows="1" cols="40"placeholder="Type Signature"></textarea>
+                            </div>
+                    </div>
+
+                            <input type ="submit" value="Submit">
+                        </form>
+                </div>
+            </div>
+
+        
+    </body>
+</html>

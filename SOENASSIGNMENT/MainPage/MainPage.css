@@ -1,108 +1,98 @@
 /*Menu attributes*/
 *{
-    box-sizing: border-box;
-    }
-    /* Header styles */
-    header{
-      position: fixed;
-      top: 0; /* You can adjust this value to change the vertical position */
-      right: 0; /* You can adjust this value to change the horizontal position */
-      width: 100%; /* Optional: To make the section span the full width of the viewport */
-      background-color: #25274D;
-      box-shadow: 0px 0px 20px;
-      z-index: 1;
-    }
-
-
-   /* Menu Styles */
-    
-   .Menu h4{
-    margin:0;
-    }
-    
-    
-    .Menu ul{
-    display: flex;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    justify-content: flex-end; /* Align items to the right */
-    }
-    
-    
-    .Menu li{
-    list-style-type: none;
-    float:right;
-    width: 15%; 
-    height: 100%;
-    text-align: center; /* Center-align text within each menu item */
-    }
-    
-    
-    .MainLogo {
-    list-style-type: none;
-   
-    float: left;
-    max-width: 5%;
-    margin-left: 0; /* Adjust this value to control the spacing from the left side */
-    }
-    .MainLogo img{
-    width:100%;
-    height:100%;
-    padding-left:20%;
-    padding-top:20%;
-    
-    }
-    
-    .Menu a{
-    text-align: center;
-    height:100%;
-    font-size: 90%;
-    font-weight: bold;
-    font-family:'Roboto','Lato', 'Open Sans';
-    color: #2E9CCA;
-    
-    
-    display: inline-block;/*menu = rectangle*/
-    background-color: #25274D;
-    border: none;
-    padding: 15%;/*disance between edge of list items*/  
+  box-sizing: border-box;
+  }
   
-    text-decoration: none;
-    cursor: pointer;
-    }
-    
-    
-    a:hover {
-    background-color:#090a1c;/*hover colour*/
-    box-shadow: 5px 5px 40px 5px;
-    }
-
-    /*option button*/
-   .optionButton {
-    color:#AAABB8;
+  /* Header Styles */
+  header{
+    position: fixed;
+    top: 0; /* You can adjust this value to change the vertical position */
+    right: 0; /* You can adjust this value to change the horizontal position */
+    width: 100%; /* Optional: To make the section span the full width of the viewport */
     background-color: #25274D;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-weight: bold;
-    font-family:'Roboto','Lato', 'Open Sans';
-    border-width: 0.5rem;
-    border-color: #AAABB8 ;
-    border-style: ridge;
-   }
+    box-shadow: 0px 0px 20px;
 
-   .optionButton:hover {
-    background-color:#090a1c;/*hover colour*/
-    box-shadow: 5px 5px 40px 5px;
-   }
+  }
+  /* Menu Styles */
+    
+  .Menu h4{
+  margin:0;
+  }
+  
+  .Menu ul{
+  margin: 0;
+  padding: 0;
+  }
+  
+  
+  .Menu li{
+  list-style-type: none;
+  float:right;
+  width: 15%; 
+  height: 100%;
+  text-align: center; /* Center-align text within each menu item */
+  }
+  
+  
+  .MainLogo {
+  list-style-type: none;
+  float: left;
+  max-width: 5%;
+  margin-left: 0; /* Adjust this value to control the spacing from the left side */
+  }
+  .MainLogo img{
+  width:100%;
+  height:100%;
+  padding-left:20%;
+  padding-top:20%;
+  
+  }
+  
+  .Menu a{
+  text-align: center;
+  height:100%;
+  font-size: 90%;
+  font-weight: bold;
+  font-family:'Roboto','Lato', 'Open Sans';
+  color: #2E9CCA;
+  display: inline-block;/*menu = rectangle*/
+  background-color: #25274D;
+  border: none;
+  padding: 15%;/*disance between edge of list items*/  
+
+  text-decoration: none;
+  cursor: pointer;
+  }
+  
+  
+  a:hover {
+  background-color:#090a1c;/*hover colour*/
+  box-shadow: 5px 5px 40px 5px;
+  }
+
+  /*Body of html file for client main page*/
+  body{
+    height:60%;
+    background-image: url('NumberLink copy.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: 15% 28%;
+  }
+  
+  .WorldLogo{
+  background-image: url("NumberLink.png");
+  background-repeat: repeat-y;
+  height:100%;
+  }
+  
+ h1, h2,h3{
+  color:#AAABB8; 
+  text-align: center;
+ }
 
    .content {
+    background-color: #25274d;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,15 +120,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    
-   
+    text-align: center;  
+    z-index: 3;  
 }
 
-body {
-  background-image: url('NumberLink\ copy.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-
+.containerButton{
+  margin:3%;
 }
+.optionButton {
+  color:#AAABB8;
+  background-color: #25274D;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family:'Roboto','Lato', 'Open Sans';
+  border-width: 0.5rem;
+  border-color: #AAABB8 ;
+  border-style: ridge;
+ }
+.optionButton:hover {
+  background-color:#090a1c;/*hover colour*/
+  box-shadow: 5px 5px 40px 5px;
+ }
+
 
