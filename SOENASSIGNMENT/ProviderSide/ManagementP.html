@@ -29,7 +29,47 @@
         
 
     <body>
+        <h2>Manage Client Account</h2>
+            <form id="manageClientForm">
+                <label for="clientID">Client ID:</label>
+                <input type="text" id="clientID" name="clientID" placeholder="Enter Client ID">
+    
+                <button type="submit" id="accessBtn">Access Account</button>
+            </form>
 
+
+        <div style="width: 400px;">
+            <h2>Create or Edit Client Account</h2>
+            <form id="clientForm">
+                <label for="name">Client Name:</label>
+                <input type="text" id="name" name="name">
+    
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+    
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+    
+                <label for="serialNumber">Serial Number:</label>
+                <input type="text" id="serialNumber" name="serialNumber">
+    
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+    
+            <hr>
+    
+            <div id="clientDetails" style="display: none;">
+                <h3>Client Information</h3>
+                <p><strong>Name:</strong> <span id="clientName"></span></p>
+                <p><strong>Phone Number:</strong> <span id="clientPhone"></span></p>
+                <p><strong>Address:</strong> <span id="clientAddress"></span></p>
+                <p><strong>Serial Number:</strong> <span id="clientSerialNumber"></span></p>
+                <button id="editBtn">Edit</button>
+                <button id="deleteBtn">Delete Account</button>
+            </div>
+        </div>
+    
+        
         <a href="l.html"><button>Go To Login</button></a>
         <a href="login.html"><button>Go To Login</button></a>
 
