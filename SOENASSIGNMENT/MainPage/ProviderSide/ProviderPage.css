@@ -268,62 +268,63 @@ table{
   }
 
   /*communication form*/
-  #clientForm,
-        #manageClientForm {
-            border: 1px solid #AAABB8;
-            padding: 20px;
-            background-color: #AAABB8;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        
-        }
-
-        h2 {
-            text-align: center;
-            color:#2E9CCA;
-        }
-
-        label {
-            display: block;
-            margin-top: 10px;
-        }
-
-        input[type="text"] {
-            width: 100%;
-            padding: 8px;
-            margin: 5px 0 15px;
-            border: 1px solid #AAABB8;
-            border-radius: 4px;
-        }
-
-        button {
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            background-color: #25274D;
-            color: #AAABB8;
-        }
-
-        #clientDetails {
-            margin-top: 20px;
-        }
-
-        #clientDetails p {
-            margin: 5px 0;
-
-        }
-
-        #editBtn,
-        #deleteBtn {
-            margin-top: 10px;
-        }
-
-        #clientDetails button {
-            display: block;
-            width: 100%;
-            margin-top: 10px;
-        }
-        
+.EmailForm {
+  margin: 150px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #AAABB8;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
   
+  
+  .EmailForm h2 {
+  text-align: center;
+  color: #25274D;
+  }
+  
+  
+  .EmailForm label {
+  display: block;
+  margin: 10px 0;
+  color: #25274D;
+  font-weight: bold;
+  }
+  
+  
+  .EmailForm input[type="email"],
+  .EmailForm select,
+  .EmailForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  }
+  
+  
+  .EmailForm textarea {
+  height: 150px;
+  }
+  
+  
+  .EmailForm input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #25274D;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 20px auto;
+  }
+  
+  
+  .EmailForm input[type="submit"]:hover {
+  background-color: #090a1c;
+  }
   

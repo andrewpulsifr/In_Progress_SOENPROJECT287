@@ -2,56 +2,53 @@
 <!--greet.html A trivaila document-->
 <html lang="en">
 
-    <head>
-        <link rel="stylesheet" href="ProviderPage.css">
-        <title>Communication form</title>
-        </head>
-        <header>
-            <div class="Menu">
-                <h4>
-                    <ul></ul>
-                        <nav>
-                            <li><a href="communication.html">Communication</a></li>
-                            <li><a href="serialGenerate.html">Generate serial number</a></li>
-                            <li><a href="serialSecurity.html">Serial number Activation</a></li>
-                            <li><a href="serialSearch.html">Serial number Search</a></li>
-                            <li> <a href="ManagementP.html">Management Page</a> </li>
-                        </nav>
-                        </div>
-                        <div class="MainLogo">
-                            <li> <img src="LOGO.png" alt="brandLogo"></li>
-                        </div>
-                        </nav>
-                    </ul>
-                </h4>
-        </header>
-        
-        
 
-    <body>
-        <form action="send_email.php" method="post" class="EmailForm"> 
-            <h1 style="color: #25274D">Notify Clients</h1>
-            <label for="providerEmail">Your Email:</label>
-            <input type="email" id="providerEmail" name="providerEmail" required><br><br>
-    
-            <label for="clientEmail">Client Email:</label>
-            <input type="email" id="clientEmail" name="clientEmail" required><br><br>
-    
-            <label for="messageType">Notification Type:</label>
-            <select id="messageType" name="messageType" required>
-                <option value="subscriptionRenewal">Select</option>
-                <option value="subscriptionRenewal">Approaching Subscription Renewal</option>
-                <option value="invalidSerial">Invalid Serial Number</option>
-                <option value="irregularUse">Irregular Use of Serial Numbers</option>
-            </select><br><br>
-    
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-    
-            <input type="submit" value="Send Email">
-        </form>
-        <a href="l.html"><button>Go To Login</button></a>
-        <a href="login.html"><button>Go To Login</button></a>
+<head>
+<link rel="stylesheet" href="ProviderPage.css">
+<title>Communication form</title>
+</head>
+<header>
+<div class="Menu">
+<h4>
+<ul></ul>
+<nav>
+<li><a href="communication.html">Communication</a></li>
+<li><a href="serialGenerate.html">Generate serial number</a></li>
+<li><a href="serialSecurity.html">Serial number Activation</a></li>
+<li><a href="serialSearch.html">Serial number Search</a></li>
+<li> <a href="ManagementP.html">Management Page</a> </li>
+</nav>
+</div>
+<div class="MainLogo">
+<li> <img src="LOGO.png" alt="brandLogo"></li>
+</div>
+</nav>
+</ul>
+</h4>
+</header>
 
-    </body>
+
+<body>
+<form action="send_email.php" method="post" class="EmailForm">
+<h1 style="color: #25274D">Notify Clients</h1>
+<label for="providerEmail">Your Email:</label>
+<input type="email" id="providerEmail" name="providerEmail" required><br><br>
+<label for="clientEmail">Client Email:</label>
+<input type="email" id="clientEmail" name="clientEmail" required><br><br>
+<label for="messageType">Notification Type:</label>
+<select id="messageType" name="messageType" required>
+<option value="subscriptionRenewal">Select</option>
+<option value="subscriptionRenewal">Approaching Subscription Renewal</option>
+<option value="invalidSerial">Invalid Serial Number</option>
+<option value="irregularUse">Irregular Use of Serial Numbers</option>
+</select><br><br>
+<label for="message">Message:</label><br>
+<textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+<input type="submit" value="Send Email">
+</form>
+<a href="l.html"><button>Go To Login</button></a>
+<a href="login.html"><button>Go To Login</button></a>
+
+
+</body>
 </html>
