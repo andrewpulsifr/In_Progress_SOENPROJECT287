@@ -1,33 +1,39 @@
 <!DOCTYPE html>
-<!--greet.html A trivaila document-->
-<html lang="en">
-
-    <head>
-        <link rel="stylesheet" href="ProviderPage.css">
-        <title>Client Menu</title>
-        </head>
-        <header>
-            <div class="Menu">
-                <h4>
-                    <ul></ul>
-                        <nav>
-                            <li><a href="communication.html">Communication</a></li>
-                            <li><a href="serialGenerate.html">Generate serial number</a></li>
-                            <li><a href="serialSecurity.html">Serial number Activation</a></li>
-                            <li><a href="serialSearch.html">Serial number Search</a></li>
-                            <li> <a href="ManagementP.html">Management Page</a> </li>
-                        </nav>
-                        </div>
-                        <div class="MainLogo">
-                            <li> <img src="LOGO.png" alt="brandLogo"></li>
-                        </div>
-                        </nav>
-                    </ul>
-                </h4>
-        </header>
-        
-        
+<html>
+<head>
+    <title>Serial Number Search Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
 <body>
+    <div class="container">
+        <h1>Serial Number Search</h1>
+        <input id="serialNumber" type="text" placeholder="Enter Serial Number">
+        <button onclick="searchSerialNumber()">Search</button>
+        <button onclick="toggleBlock()">Block/Unblock</button>
+        <div id="output"></div>
+    </div>
+    <a href="page1.html">Go back to Provider Information Page</a>
+    <script>
+        const storedSerialNumbers = [];
 
+        function searchSerialNumber() {
+            const serialNumber = document.getElementById('serialNumber').value;
+            const found = storedSerialNumbers.includes(serialNumber);
+            const status = found ? 'Found' : 'Not Found';
+            document.getElementById('output').textContent = `Serial Number: ${serialNumber}, Status: ${status}`;
+        }
+
+        function toggleBlock() {
+            const serialNumber = document.getElementById('serialNumber').value;
+            if (storedSerialNumbers.includes(serialNumber)) {
+                const index = storedSerialNumbers.indexOf(serialNumber);
+                storedSerialNumbers.splice(index, 1);
+                document.getElementById('output').textContent = `Serial Number: ${serialNumber} is Unblocked.`;
+            } else {
+                storedSerialNumbers.push(serialNumber);
+                document.getElementById('output').textContent = `Serial Number: ${serialNumber} is Blocked.`;
+            }
+        }
+    </script>
 </body>
 </html>
