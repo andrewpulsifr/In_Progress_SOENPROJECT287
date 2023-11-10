@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Provider Information Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Store Client Information</h1>
+        <textarea id="clientName" placeholder="Enter Client Name"></textarea>
+        <button onclick="storeClientName()">Store Client Name</button>
+        <textarea id="clientProduct" placeholder="Enter Client Product"></textarea>
+        <button onclick="storeClientProduct()">Store Client Product</button>
+        <button onclick="generateSerialNumber()">Generate Serial Number</button>
+        <div id="output"></div>
+    </div>
+    <a href="page2.html">Go to Serial Number Search Page</a>
+    <script>
+        const storedData = { clientName: '', clientProduct: '', serialNumber: '' };
+
+        function storeClientName() {
+            const name = document.getElementById('clientName').value;
+            storedData.clientName = name;
+            document.getElementById('output').textContent = `Client Name: ${name}`;
+        }
+
+        function storeClientProduct() {
+            const product = document.getElementById('clientProduct').value;
+            storedData.clientProduct = product;
+            document.getElementById('output').textContent += `\nClient Product: ${product}`;
+        }
+
+        function generateSerialNumber() {
+            const serialNumber = Math.floor(10000000 + Math.random() * 90000000);
+            storedData.serialNumber = serialNumber;
+            document.getElementById('output').textContent += `\nSerial Number: ${serialNumber}`;
+        }
+    </script>
+</body>
+</html>
