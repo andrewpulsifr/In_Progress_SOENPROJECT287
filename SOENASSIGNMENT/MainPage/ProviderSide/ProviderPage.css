@@ -327,4 +327,47 @@ table{
   .EmailForm input[type="submit"]:hover {
   background-color: #090a1c;
   }
+
+  /*login button*/
+
+ .LoginBox {
+  font-family: 'Times New Roman';
+  width: 1000px;
+  border: 15px #AAABB8;
+  padding: 50px;
+  margin: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.LoginBox h4 {
+  text-align: center;
+  color: #ccc;
   
+}
+
+.LoginBox input[type="submit"] {
+  width: 50%; /* Adjust the width as needed */
+  padding: 10px;
+  background-color: #25274D;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 20px auto; /* Center the submit button horizontally */
+  
+}
+
+.LoginBox input[type="submit"]:hover {
+  background-color: #090a1c;
+}
+
+.LoginBox ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
